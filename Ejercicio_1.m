@@ -1,12 +1,19 @@
 %
-%   Description: 
+%   Description: Generador de funcion triangular
 %
 %   Author: 
 %   
-%   Date: 05/08/2018
+%   Date: 27/09/2018
 %
-%   Comment: 
-%            -Grafica un solo periodo
+%   Comment:	- Signal:	La señal generada
+%				- Vme:		El valor medio de la señal
+%				- Vrms:		El valor eficaz de la señal
+%				- T:		Periodo
+%				- D:		Ubicacion del máximo
+%				- Vpp:		Valor pico a pico
+%				- DC:		Nivel de continua
+%				- Ts:		Tiempo entre muestras
+%				- Grafica un solo periodo
 %
 %   Tests run: 
 

@@ -1,6 +1,4 @@
 classdef Sistema
-	%UNTITLED Summary of this class goes here
-	%   Detailed explanation goes here
 	
 	properties
 		H		%Objeto funcion transferencia
@@ -16,6 +14,7 @@ classdef Sistema
 	end
 	
 	methods
+		%Constructor
 		function obj = Sistema(Num,Den)
 			
 			%Defino la funcion transferencia
@@ -33,7 +32,7 @@ classdef Sistema
 			obj.Polos = roots(Den);
 			
 			%Defino el orden del sistema
-			obj.Orden = lenght(obj.Polos);
+			obj.Orden = length(obj.Polos);
 			
 			%Defino la estabilidad o no del sistema
 			%Para que el sistema sea estable no puede haber polos en el
@@ -43,7 +42,7 @@ classdef Sistema
 			%Defino la fase minima o no del sistema
 			%Para que haya fase minima todos los polos y ceros deben estar
 			%en el semiplano izquierdo
-			obj.Fase = (~any( real(obj.Ceros) > 0 )) & Estable;
+			obj.Fase = (~any( real(obj.Ceros) > 0 )) & obj.Estable;
 			
 		end
 	end
